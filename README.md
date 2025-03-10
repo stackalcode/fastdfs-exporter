@@ -1,6 +1,6 @@
 # fastdfs-exporter  
 
-###fastdfs-exporter是通过调用fdfs_monitor命令，对fastdfs本身的输出结果进行格式化，输出到prometheus  
+### fastdfs-exporter是通过调用fdfs_monitor命令，对fastdfs本身的输出结果进行格式化，输出到prometheus  
 
 ## docker运行 
 
@@ -13,7 +13,11 @@ TRACKER_SERVER：指定tracker地址
 ## curl metrics
 ```
 $ curl localhost:9018/metrics
-```
+```  
+![image](https://github.com/stackalcode/fastdfs-exporter/blob/main/metrics.jpg)  
+  
+### 将DashboardGrafana.json导入到grafana中就可以出现如下监控聚合图形  
+
 ## Dashboard
 
 ![image](https://github.com/whithen/fastdfs-exporter/blob/master/FastDFSMonitor.png)
