@@ -1,7 +1,9 @@
-#fastdfs-exporter
-###fastdfs-exporter是通过调用fdfs_monitor命令，对fastdfs本身的输出结果进行格式化，输出到prometheus
+#fastdfs-exporter  
 
-##docker运行
+###fastdfs-exporter是通过调用fdfs_monitor命令，对fastdfs本身的输出结果进行格式化，输出到prometheus  
+
+##docker运行 
+
 ```
 $ sudo docker run -itd  --network=fastdfs-net --name fastdfs-exporter -e TRACKER_SERVER=tracker:22122 -p 19018:9018 fastdfs-exporter:latest
 ```
